@@ -1,48 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Toggle</title>
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- MDBootstrap CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
 
-     <!-- font link -->
-     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<!-- MDBootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
 
-	<link rel="stylesheet" href="h2styles.css">
-	<title></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<body>
 
-<!-- jumbotron -->
-		<div class="jumbotron">
-			  <h1 class="display-4">Shrujal Bhandari</h1>
-			  <!-- dynamic text -->
-				<div class="dynamic-container">
-			        I'm a <span class="dynamic-text" id="dynamic-text"></span>.
-			    </div>
-			  <!-- dynamic text end -->
-			  <!-- Object Wrapper -->
-			  <div class="background-wrapper">
-				  <div class="loop-wrapper">
-					  <div class="mountain"></div>
-					  <div class="hill"></div>
-					  <div class="tree"></div>
-					  <div class="tree"></div>
-					  <div class="tree"></div>
-					  <div class="rock"></div>
-					  <div class="truck"></div>
-					  <div class="wheels"></div>
-				  </div>
-		     </div> 
-         </div>
-<!-- jumbotron ends -->
+<body class="bg-white text-black">
 
-<script src="h2script.js"></script>
-<script>
-    // Call the function defined in the external file
-    dynamiccontainer();
-  </script>
+<div class="container">
+ <div class="preloader-section" id="preloader" aria-label="Shrujal">
+ 	<div class="grid">
+ 		<div class="row">
+ 		<span class="span-shrujal"> "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it." </span>
+ 		</div>
+ 		<div class="row">
+ 			<div class="dynamic-container text-center">
+				   <span class="loading-text" id="loading-text" text="Loading...."></span>.
+		    </div>
+ 		</div>
+ 	</div>
+ </div>
+</div>
+
+<div class="content" id="content">
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">shrujal</a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Right links -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#home-section">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#home-section">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#study-section" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <!-- Right links -->
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<!-- Navbar Ends -->
+
+<!-- container-fluid : starts -->
+<div class="container-fluid">
+<!-- row 1 -->
+	<div class="row">
+		<div class="col text-center">
+			<div class="empty-space"></div> 
+			<!-- <h1 class="intro-text">Hi, I'm <br>Shrujal</h1> -->
+	<h1 class="intro-text">Hi, I'm <br><span class= "intro-span" style="display: inline-block; margin-left: 18px;">Shrujal.</span></h1>
+			<div class="dynamic-container">
+				    I'm a <span class="dynamic-text" id="dynamic-text"></span>.
+		    </div>
+	<div class="empty-space2"></div>
+<!-- toggle switch  -->
+		    <div class="toggle-section"> 
+				<div class="toggle-switch" id="toggleSwitch">
+        		<div class="sun-icon">☀️</div>
+        		<div class="moon-icon">🌙</div>
+        		<div class="toggle-ball" id="toggleBall"></div>
+   	 		</div>
+		 </div>
+		 <section class="vibe-section">"Change the vibe"</section>
+	</div>
+
+
+<!-- row2 -->
+		<div class="col text-center">
+<div class="circle-image-container">
+  <img src="IMG_2683.jpg" alt="Circular Image" class="circle-image">
+</div>
+		</div>
+	</div>
+	<!-- row ends -->
+
+	<!-- section starts -->
+	 <section id="home-section" class="section">
+	    <h1>Welcome to Home</h1>
+	    <p>This is the Home section.</p>
+	  </section>
+
+	  <section id="study-section" class="section">
+	    <h1>Welcome to Home</h1>
+	    <p>This is the Home section.</p>
+	  </section>
+	<!-- section ends -->
+
+</div>
+<!-- container-fluid : ends -->
+
+</div>
+<!-- content ends -->
+
+<script type="text/javascript">
+	 const preloader = document.getElementById('preloader');
+        const content = document.getElementById('content');
+
+        // Show the preloader for 4 seconds, then load the main content
+        setTimeout(() => {
+            preloader.style.display = 'none';
+            content.style.display = 'block';
+        }, 3000);
+</script>
+   <script type="text/javascript" src="home.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+
 </body>
 </html>
