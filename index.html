@@ -36,55 +36,65 @@
 <div class="content" id="content">
 <!-- Navbar -->
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">shrujal</a>
+<nav class="navbar navbar-expand-lg" >
+    <div class="container-fluid" >
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <div class="brand-logo"></div>
+        <span class="logo-text">Shrujal </span>
+      </a>
 
-    <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
+     <!-- Toggle button -->
+	    <button
+		  class="navbar-toggler"
+		  type="button"
+		  data-bs-toggle="collapse"
+		  data-bs-target="#navbarNav"
+		  aria-controls="navbarNav"
+		  aria-expanded="false"
+		  aria-label="Toggle navigation">
+		  <i class="fas fa-bars"></i>
+	    </button>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Right links -->
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#home-section">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#home-section">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#study-section" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <!-- Right links -->
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse blur-bg-menu" id="navbarNav">
+        <ul class="navbar-nav mx-auto" style="font-size: 20px;">
+          <li class="nav-item">
+            <a class="nav-link" id="homeActive" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#description-section">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+          <a class="btn btn-primary" id="downloadResume">Download CV</a>
+        </div>
+      </div>
     </div>
-    <!-- Collapsible wrapper -->
-  </div>
-  <!-- Container wrapper -->
-</nav>
+  </nav>	
 <!-- Navbar -->
 <!-- Navbar Ends -->
 
 <!-- container-fluid : starts -->
-<div class="container-fluid">
+<div class="container-fluid block-one">
 <!-- row 1 -->
 	<div class="row">
 		<div class="col text-center">
 			<div class="empty-space"></div> 
 			<!-- <h1 class="intro-text">Hi, I'm <br>Shrujal</h1> -->
 	<h1 class="intro-text">Hi, I'm <br><span class= "intro-span" style="display: inline-block; margin-left: 18px;">Shrujal.</span></h1>
+	<div class="empty-space2"></div>
 			<div class="dynamic-container">
 				    I'm a <span class="dynamic-text" id="dynamic-text"></span>.
 		    </div>
@@ -98,29 +108,272 @@
    	 		</div>
 		 </div>
 		 <section class="vibe-section">"Change the vibe"</section>
+	<div class="empty-space2"></div>
+		
+			<div class="resume-section">
+			 	<div class="col button-line">
+					 <button type="button" id="downloadResume" class="btn btn-warning" style="font-weight: bold;">Resume</button>
+					  <div class="vertical-line" id="vertical-line"></div>
+					   <div class="icons">
+					    <a href="https://www.linkedin.com/in/shrujal-bhandari-b82047103/" target="_blank">
+					    	<img src="images/linkedin.png" alt="LinkedIn" href="">
+					    </a>
+					    <a href="mailto:bhandarishrujal@gmail.com">
+					    	<img src="images/gmail.png" alt="gmail" target="_blank" >
+					    </a>
+					    <a href="https://github.com/shrujal24/Shrujal-Bhandari" target="_blank">
+					    	<img src="images/github.png" alt="github" style="background-color:white;border-radius:30px;">
+					    </a>
+					    <a href="https://www.behance.net/shrjlhdr" target="_blank"> 
+					    	<img src="images/behance.png" alt="behance" target="_blank">
+					    </a>
+				      </div>
+			 	</div>
+			</div>
+		 	<div class="col">
+		 		
+		 	</div>
 	</div>
 
+<div class="empty-space-mobileview" style="display: none;"></div> 
 
 <!-- row2 -->
-		<div class="col text-center">
+<div class="col text-center">
 <div class="circle-image-container">
-  <img src="IMG_2683.jpg" alt="Circular Image" class="circle-image">
+  <!-- <img src="IMG_2683.jpg" alt="Circular Image" class="circle-image"> -->
+  <!-- jumbotron -->
+		<div class="jumbotron">
+			  <!-- <h1 class="display-4">Shrujal Bhandari</h1> -->
+			  <!-- dynamic text -->
+				<!-- <div class="dynamic-container">
+			        I'm a <span class="dynamic-intro-text" id="dynamic-intro-text"></span>.
+			    </div> -->
+			  <!-- dynamic text end -->
+			  <!-- Object Wrapper -->
+			  <div class="background-wrapper">
+				  <div class="loop-wrapper">
+					  <div class="mountain"></div>
+					  <div class="hill"></div>
+					  <div class="tree"></div>
+					  <div class="tree"></div>
+					  <div class="tree"></div>
+					  <div class="rock"></div>
+					  <div class="truck">
+					  	<div class="truck-inner"></div>
+					  </div>
+					  <div class="wheels"></div>
+				  </div>
+		    </div> 
+		    <div class="dynamic-container text-white" style="color: #009688;">
+			        "Delivering quality solutions.."
+			    </div>
+         </div>
+<!-- jumbotron ends -->
+
 </div>
 		</div>
 	</div>
 	<!-- row ends -->
 
-	<!-- section starts -->
-	 <section id="home-section" class="section">
-	    <h1>Welcome to Home</h1>
-	    <p>This is the Home section.</p>
-	  </section>
 
-	  <section id="study-section" class="section">
-	    <h1>Welcome to Home</h1>
-	    <p>This is the Home section.</p>
-	  </section>
+<!-- row 2 starts -->
+<div class="row">
+	<section class="description-section" id="description-section">
+		<div class="container">
+		<h1 class="display-5">Over the years,</h1>
+      <!-- Subheading -->
+      <p class="lead">
+        I am currently on an exciting journey, pursuing my Masters in Information System Security at Concordia University, prior to that I worked as a .Net developer where I worked on some of the complex insurance projects of India's leading insurance provider. Having an extensive experience of around 2.5 years in development domain (ASP.NET Webforms and Core, C#). Also having an experience of leading a team, handling clients for business requirement understanding and handling end-to-end projects.
+      </p>
+	</section>
+	</div>
+</div>
+
+			<div class="empty-space3"></div> 
+
+<!-- row 2 : Tooling section starts -->
+<div class="row">
+	<section class="tooling-section" id="tooling-section" style="padding-top: 60px;padding-bottom: 30px;">
+	<h1 class="text-center" style="padding-bottom: 10px;"> Tech Stack</h1>
+	<div class="scroll-container">
+    <div class="scroll-wrapper" >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt=".net"  class="tech-logo" name=".NET Core" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="tech-logo" />
+      <img src="https://www.jetbrains.com/guide/assets/csharp-logo-265a149e.svg" alt="C#" class="tech-logo" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"  class="tech-logo"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript"  class="tech-logo"/>
+     <img src="https://images.credly.com/size/680x680/images/a699a8c9-354e-4404-b00c-fd3ebdc4289b/jquery-badge.png" alt="jquery" class="tech-logo"/>
+      <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="bootstrap"  class="tech-logo"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" class="tech-logo" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="css"  class="tech-logo" name=".NET Core"/>
+      <img src="https://isagebrum.com/images/technology/reactjs-image.svg" alt="ReactJs" class="tech-logo" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" class="tech-logo" />
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/microsoft-sql-server-logo-png-transparent.png" alt="SQL Server"  class="tech-logo"/>
+ 	<img src="https://www.oracle.com/a/ocom/img/pl-sql.svg" alt="Oracle SQL"  class="tech-logo"/>
+     <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="amazon"  class="tech-logo"/>
+    </div>
+  </div>
+</section>
+</div>
+<!-- row 2 : Tooling section ends -->
+
+
+			<div class="empty-space3"></div> 
+
+<!-- section starts -->
+<section id="home-section" class="section text-center" style="padding-top: 30px;">
+<h1 class="text-center" style="padding-bottom:30px;">Projects</h1>
+
+<div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="images/cayds1.png" alt="Companies at your doorstep" class="card-image">
+            <div class="card-content">
+                <h2>Companies at your doorstep</h2>
+                <p></p>
+                <p><strong>Stack:</strong></p>
+                <div class="stack">
+                    <span>.NET</span>
+                    <span>SQL</span>
+                    <span>HTML, CSS, JS</span>
+                </div>
+                <div class="card-buttons">
+                    <a href="https://github.com/shrujal24/CompaniesAtYourDoorstep" class="btn btn-primary" target="_blank" style="background-color:black;border-color: white;">Github Repo</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/PPA.png" alt="Privacy Policy Analyzer" class="card-image">
+            <div class="card-content">
+                <h2>Privacy Policy </br>Analyzer</h2>
+                <p><strong>Stack:</strong></p>
+                <div class="stack">
+                    <span>Python</span>
+                    <span>AI Model</span>
+                    <span>HTML, CSS, JS</span>
+                </div>
+                <div class="card-buttons">
+                    <a href="https://github.com/shrujal24/Privacy-Policy-Analyzer" class="btn btn-primary" target="_blank" style="background-color:black;border-color: white;">Github Repo</a>
+                </div>
+            </div>
+        </div>
+
+         <div class="card">
+            <img src="images/kanban.png" alt="kanban Board" class="card-image">
+            <div class="card-content">
+                <h2>Kanban </br>Board</h2>
+                <p><strong>Stack:</strong></p>
+                <div class="stack">
+                    <span>ReactJs</span>
+                    <span>Material UI</span>
+                    <span>JSON-Server</span>
+                </div>
+                <div class="card-buttons">
+              <a href="https://www.behance.net/shrjlhdr" class="btn btn-primary" target="_blank" style="background-color:black;border-color: white;">Github Repo</a>
+                    <!-- <button class="preview-btn">Preview</button> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="images/rsa.png" alt="RSA Algo" class="card-image">
+            <div class="card-content">
+                <h2>RSA : Encryption & Decryption</h2>
+                <p><strong>Stack:</strong></p>
+                <div class="stack">
+                    <span>Python</span>
+                    <span>Security Methodologies</span>
+                </div>
+                <div class="card-buttons">
+                  <a href="https://github.com/shrujal24/RSA-Encryption-and-Decryption" class="btn btn-primary" target="_blank" style="background-color:black;border-color: white;">Github Repo</a>
+                    <!-- <button class="preview-btn">Preview</button> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="images/behance2.png" alt="Behance-Shrujal" class="card-image">
+            <div class="card-content">
+                <h2>Behance</h2>
+                <p><strong>Stack:</strong></p>
+                <div class="stack">
+                    <span>UI/UX</span>
+                    <span>Website Design</span>
+                </div>
+                <div class="card-buttons">
+                  <a href="https://www.behance.net/shrjlhdr" class="btn btn-primary" target="_blank" style="background-color:black;border-color: white;">Visit Profile</a>
+                    <!-- <button class="preview-btn">Preview</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+			<div class="empty-space"></div> 
+
+<section id="study-section" class="section-experience" style="padding-bottom:20px">
+<h1 class="text-center">Working History</h1>
+
+<div class="timeline-container text-center">
+        <!-- Timeline Section -->
+        <div class="timeline">
+            <div class="timeline-item" data-job="gdg-president">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Synoverge Technologies</h3>
+                    <p>Software Engineer</p>
+                    <p>June 2021 - Dec 2023</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-job="cheffery">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Synoverge Technologies</h3>
+                    <p>Software Engineer Intern</p>
+                    <p>Feb 2021 - June 2021</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Job Description Section -->
+        <div class="job-description text-center">
+            <h3 id="job-title">Synoverge Technologies</h3>
+            <p id="job-role">Software Engineer - (Jun 2021 - Dec 2023)</p>
+            <h4>Skills:</h4>
+            <p id="job-skills">.Net Core MVC, .Net MVC, .NET Webforms, ReactJs, Angular, SQL Server, Database Optimization</p>
+            <h4>Job Description:</h4>
+            <ul id="job-details">
+                <li>Developed and maintained insurance domain applications using .NET Core MVC, .Net Framework, Angular, SQL Server.Optimizing stored procedures to improve query performance and reduce processing time by 30%. Followed SDLC and Agile methodologies for defect-free coding and enhancements with proper documentation for all processes.</li>
+            <li>Developed and deployed microservices-based features using .NET Core"</li>
+            <li>Built and consumed RESTful APIs, ensuring seamless integration between services, and performed API testing and debugging using Postman.</li>
+           
+            </ul>
+        </div>
+    </div>
+
+</section>
 	<!-- section ends -->
+
+
+
+
+<section class="contact-section">
+    <div class="contact-container">
+      <h2>Send Me a Message</h2>
+      <p>I’d love to hear from you! Fill out the form below and I’ll get back to you as soon as possible.</p>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="button" onclick="sendMessage()">Send Message</button>
+      </form>
+    </div>
+  </section>
+
 
 </div>
 <!-- container-fluid : ends -->
@@ -136,11 +389,14 @@
         setTimeout(() => {
             preloader.style.display = 'none';
             content.style.display = 'block';
-        }, 3000);
+        }, 30);
 </script>
-   <script type="text/javascript" src="h2script.js"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
+   <script type="text/javascript" src="h2script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+</script>
 
 </body>
 </html>
