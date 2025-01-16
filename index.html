@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Theme Toggle</title>
-  <link rel="stylesheet" href="h2styles.css">
+  <title>Shrujal Bhandari</title>
+   <link rel="icon" type="image/x-icon" href="favicon.png">
+   <script src="pageLoad1.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <!-- MDBootstrap CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css">
@@ -14,9 +15,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"></script>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="h2styles.css">
+
 </head>
 
-<body class="bg-white text-black">
+<body class="bg-black text-white">
 
 <div class="container">
  <div class="preloader-section" id="preloader" aria-label="Shrujal">
@@ -34,6 +37,7 @@
 </div>
 
 <div class="content" id="content">
+<div id="stars-container"></div>
 <!-- Navbar -->
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg" >
@@ -41,7 +45,8 @@
       <!-- Brand -->
       <a class="navbar-brand" href="#">
         <div class="brand-logo"></div>
-        <span class="logo-text">Shrujal </span>
+        <!-- <span class="logo-text" id="homeActive"> </span> -->
+	<img src="s1.png" alt="LinkedIn" href="">
       </a>
 
      <!-- Toggle button -->
@@ -63,16 +68,16 @@
             <a class="nav-link" id="homeActive" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#project-section">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link" href="#experience-section">Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#description-section">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact-section">Contact</a>
           </li>
         </ul>
 
@@ -116,16 +121,16 @@
 					  <div class="vertical-line" id="vertical-line"></div>
 					   <div class="icons">
 					    <a href="https://www.linkedin.com/in/shrujal-bhandari-b82047103/" target="_blank">
-					    	<img src="images/linkedin.png" alt="LinkedIn" href="">
+					    	<img src="linkedin.png" alt="LinkedIn" href="">
 					    </a>
 					    <a href="mailto:bhandarishrujal@gmail.com">
-					    	<img src="images/gmail.png" alt="gmail" target="_blank" >
+					    	<img src="gmail.png" alt="gmail" target="_blank" >
 					    </a>
 					    <a href="https://github.com/shrujal24/Shrujal-Bhandari" target="_blank">
-					    	<img src="images/github.png" alt="github" style="background-color:white;border-radius:30px;">
+					    	<img src="github.png" alt="github" style="background-color:white;border-radius:30px;">
 					    </a>
 					    <a href="https://www.behance.net/shrjlhdr" target="_blank"> 
-					    	<img src="images/behance.png" alt="behance" target="_blank">
+					    	<img src="behance.png" alt="behance" target="_blank">
 					    </a>
 				      </div>
 			 	</div>
@@ -174,11 +179,12 @@
 		</div>
 	</div>
 	<!-- row ends -->
+<div class="empty-space-mobileview" style="display: none;"></div> 
 
 
 <!-- row 2 starts -->
 <div class="row">
-	<section class="description-section" id="description-section">
+	<section class="description-section text-center" id="description-section">
 		<div class="container">
 		<h1 class="display-5">Over the years,</h1>
       <!-- Subheading -->
@@ -194,7 +200,7 @@
 <!-- row 2 : Tooling section starts -->
 <div class="row">
 	<section class="tooling-section" id="tooling-section" style="padding-top: 60px;padding-bottom: 30px;">
-	<h1 class="text-center" style="padding-bottom: 10px;"> Tech Stack</h1>
+	<h1 class="text-center" style="padding-bottom: 25px;"> Tech Stack</h1>
 	<div class="scroll-container">
     <div class="scroll-wrapper" >
       <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/.NET_Core_Logo.svg" alt=".net"  class="tech-logo" name=".NET Core" />
@@ -202,11 +208,11 @@
       <img src="https://www.jetbrains.com/guide/assets/csharp-logo-265a149e.svg" alt="C#" class="tech-logo" />
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"  class="tech-logo"/>
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="TypeScript"  class="tech-logo"/>
-     <img src="https://images.credly.com/size/680x680/images/a699a8c9-354e-4404-b00c-fd3ebdc4289b/jquery-badge.png" alt="jquery" class="tech-logo"/>
+     <img src="https://images.credly.com/size/680x680/a699a8c9-354e-4404-b00c-fd3ebdc4289b/jquery-badge.png" alt="jquery" class="tech-logo"/>
       <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="bootstrap"  class="tech-logo"/>
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" class="tech-logo" />
       <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="css"  class="tech-logo" name=".NET Core"/>
-      <img src="https://isagebrum.com/images/technology/reactjs-image.svg" alt="ReactJs" class="tech-logo" />
+      <img src="https://isagebrum.com/technology/reactjs-image.svg" alt="ReactJs" class="tech-logo" />
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" class="tech-logo" />
       <img src="https://cdn.freebiesupply.com/logos/large/2x/microsoft-sql-server-logo-png-transparent.png" alt="SQL Server"  class="tech-logo"/>
  	<img src="https://www.oracle.com/a/ocom/img/pl-sql.svg" alt="Oracle SQL"  class="tech-logo"/>
@@ -221,17 +227,17 @@
 			<div class="empty-space3"></div> 
 
 <!-- section starts -->
-<section id="home-section" class="section text-center" style="padding-top: 30px;">
+<section id="project-section" class="section text-center" style="padding-top: 30px;">
 <h1 class="text-center" style="padding-bottom:30px;">Projects</h1>
 
 <div class="card-container">
         <!-- Card 1 -->
         <div class="card">
-            <img src="images/cayds1.png" alt="Companies at your doorstep" class="card-image">
+            <img src="cayds4.png" alt="Companies at your doorstep" class="card-image">
             <div class="card-content">
-                <h2>Companies at your doorstep</h2>
+                <h2 class="cardtext">Companies at your doorstep</h2>
                 <p></p>
-                <p><strong>Stack:</strong></p>
+                <p class="cardtext"><strong>Stack:</strong></p>
                 <div class="stack">
                     <span>.NET</span>
                     <span>SQL</span>
@@ -244,10 +250,10 @@
         </div>
 
          <div class="card">
-            <img src="images/PPA.png" alt="Privacy Policy Analyzer" class="card-image">
+            <img src="PPA1.png" alt="Privacy Policy Analyzer" class="card-image">
             <div class="card-content">
-                <h2>Privacy Policy </br>Analyzer</h2>
-                <p><strong>Stack:</strong></p>
+                <h2 class="cardtext">Privacy Policy </br>Analyzer</h2>
+                <p class="cardtext"><strong>Stack:</strong></p>
                 <div class="stack">
                     <span>Python</span>
                     <span>AI Model</span>
@@ -260,10 +266,10 @@
         </div>
 
          <div class="card">
-            <img src="images/kanban.png" alt="kanban Board" class="card-image">
+            <img src="https://www.admin-dashboards.com/content/size/w2000/2021/07/kanboard-main-page-2.jpg" alt="kanban Board" class="card-image">
             <div class="card-content">
-                <h2>Kanban </br>Board</h2>
-                <p><strong>Stack:</strong></p>
+                <h2 class="cardtext">Kanban </br>Board</h2>
+                <p class="cardtext"><strong>Stack:</strong></p>
                 <div class="stack">
                     <span>ReactJs</span>
                     <span>Material UI</span>
@@ -278,10 +284,10 @@
 
         <!-- Card 2 -->
         <div class="card">
-            <img src="images/rsa.png" alt="RSA Algo" class="card-image">
+            <img src="rsa1.png" alt="RSA Algo" class="card-image">
             <div class="card-content">
-                <h2>RSA : Encryption & Decryption</h2>
-                <p><strong>Stack:</strong></p>
+                <h2 class="cardtext">RSA : Encryption & Decryption</h2>
+                <p class="cardtext"><strong>Stack:</strong></p>
                 <div class="stack">
                     <span>Python</span>
                     <span>Security Methodologies</span>
@@ -295,10 +301,10 @@
 
         <!-- Card 2 -->
         <div class="card">
-            <img src="images/behance2.png" alt="Behance-Shrujal" class="card-image">
+            <img src="behancepp.png" alt="Behance-Shrujal" class="card-image">
             <div class="card-content">
-                <h2>Behance</h2>
-                <p><strong>Stack:</strong></p>
+                <h2 class="cardtext">Behance</h2>
+                <p class="cardtext"><strong>Stack:</strong></p>
                 <div class="stack">
                     <span>UI/UX</span>
                     <span>Website Design</span>
@@ -315,40 +321,48 @@
 
 			<div class="empty-space"></div> 
 
-<section id="study-section" class="section-experience" style="padding-bottom:20px">
-<h1 class="text-center">Working History</h1>
+<section id="experience-section" class="section-experience" style="padding-bottom:20px">
+<h1 class="text-center" style="padding-bottom:25px">Working History</h1>
 
 <div class="timeline-container text-center">
         <!-- Timeline Section -->
         <div class="timeline">
-            <div class="timeline-item" data-job="gdg-president">
+        	<!-- <div class="timeline-item" data-job="hackConcordia">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <h3>Synoverge Technologies</h3>
-                    <p>Software Engineer</p>
-                    <p>June 2021 - Dec 2023</p>
+                    <h3 class="cardtext">HackConcordia</h3>
+                    <p class="cardtext">Director (Marketing)</p>
+                    <p class="cardtext">May 2024 - Current</p>
+                </div>
+            </div> -->
+            <div class="timeline-item" data-job="synoEngineer" id="synoEngineer">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3 class="cardtextexp">Synoverge Technologies</h3>
+                    <p class="cardtextexp">Software Engineer</p>
+                    <p class="cardtextexp">June 2021 - Dec 2023</p>
                 </div>
             </div>
-            <div class="timeline-item" data-job="cheffery">
+            <div class="timeline-item" data-job="synoIntern">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <h3>Synoverge Technologies</h3>
-                    <p>Software Engineer Intern</p>
-                    <p>Feb 2021 - June 2021</p>
+                    <h3 class="cardtextexp">Synoverge Technologies</h3>
+                    <p class="cardtextexp">Software Engineer Intern</p>
+                    <p class="cardtextexp">Feb 2021 - June 2021</p>
                 </div>
             </div>
         </div>
 
         <!-- Job Description Section -->
         <div class="job-description text-center">
-            <h3 id="job-title">Synoverge Technologies</h3>
-            <p id="job-role">Software Engineer - (Jun 2021 - Dec 2023)</p>
-            <h4>Skills:</h4>
-            <p id="job-skills">.Net Core MVC, .Net MVC, .NET Webforms, ReactJs, Angular, SQL Server, Database Optimization</p>
-            <h4>Job Description:</h4>
-            <ul id="job-details">
+            <h3 id="job-title" class="cardtext">Synoverge Technologies</h3>
+            <p id="job-role" class="cardtext">Software Engineer - (Jun 2021 - Dec 2023)</p>
+            <h4 class="cardtext">Skills:</h4>
+            <p id="job-skills" class="cardtext">.Net Core MVC, .Net MVC, .NET Webforms, ReactJs, Angular, SQL Server, Database Optimization</p>
+            <h4 class="cardtext">Job Description:</h4>
+            <ul id="job-details" class="cardtext">
                 <li>Developed and maintained insurance domain applications using .NET Core MVC, .Net Framework, Angular, SQL Server.Optimizing stored procedures to improve query performance and reduce processing time by 30%. Followed SDLC and Agile methodologies for defect-free coding and enhancements with proper documentation for all processes.</li>
-            <li>Developed and deployed microservices-based features using .NET Core"</li>
+            <li >Developed and deployed microservices-based features using .NET Core"</li>
             <li>Built and consumed RESTful APIs, ensuring seamless integration between services, and performed API testing and debugging using Postman.</li>
            
             </ul>
@@ -359,17 +373,15 @@
 	<!-- section ends -->
 
 
-
-
-<section class="contact-section">
+<section class="contact-section" id="contact-section">
     <div class="contact-container">
-      <h2>Send Me a Message</h2>
-      <p>I’d love to hear from you! Fill out the form below and I’ll get back to you as soon as possible.</p>
+      <h2 class="contactText">Send Me a Message</h2>
+      <p class="contactText">I’d love to hear from you! Fill out the form below and I’ll get back to you as soon as possible.</p>
       <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="button" onclick="sendMessage()">Send Message</button>
+        <input type="text" id="name" class="formColor" placeholder="Your Name" required />
+        <input type="email" id="email" class="formColor" placeholder="Your Email" required />
+        <textarea id="message" class="formColor" placeholder="Your Message" rows="5" required></textarea>
+        <button type="button" onclick="sendMessage()" class="contactBtn">Send Message</button>
       </form>
     </div>
   </section>
@@ -382,6 +394,10 @@
 <!-- content ends -->
 
 <script type="text/javascript">
+
+    // const synoEngineer = document.getElementById('preloader');
+	// synoEngineer.style.
+
 	 const preloader = document.getElementById('preloader');
         const content = document.getElementById('content');
 
@@ -389,7 +405,28 @@
         setTimeout(() => {
             preloader.style.display = 'none';
             content.style.display = 'block';
-        }, 30);
+        }, 2000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const defaultItem = document.getElementById('synoEngineer');
+    if (defaultItem) {
+        defaultItem.classList.add('selected'); // Mark as selected
+    }
+});
+
+// Add click event listeners for all timeline items
+document.querySelectorAll('.timeline-item').forEach((item) => {
+    item.addEventListener('click', (event) => {
+        // Remove 'selected' class from all items
+        document.querySelectorAll('.timeline-item').forEach((i) => {
+            i.classList.remove('selected');
+        });
+
+        // Add 'selected' class to the clicked item
+        event.currentTarget.classList.add('selected');
+    });
+});
+
 </script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script type="text/javascript" src="h2script.js"></script>
