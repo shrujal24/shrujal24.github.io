@@ -118,7 +118,7 @@ document.querySelectorAll(".timeline-item").forEach(item => {
 
 // dowload resume
  document.getElementById('downloadResume').addEventListener('click', function () {
-      const pdfUrl = 'pdf/Software-Engineer-Shrujal.pdf'; // Replace with the actual path to your PDF file
+      const pdfUrl = 'Shrujal-Bhandari-SDE.pdf'; // Replace with the actual path to your PDF file
       // Open the PDF in a new tab
       const newTab = window.open(pdfUrl, '_blank');
       // Force download in the new tab
