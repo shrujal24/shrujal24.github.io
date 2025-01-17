@@ -173,10 +173,10 @@ const mediaQuery = window.matchMedia('(max-width: 750px)');
     $('.blur-bg-menu ').css('background-color', 'transparent');
   }
 	
-	// toggleSwitch.classList.toggle('light-mode');
-	// toggleSwitch.classList.toggle('dark-mode');
+	toggleSwitch.classList.toggle('light-mode');
+	toggleSwitch.classList.toggle('dark-mode');
 	//document.body.style.backgroundColor = toggleSwitch.classList.contains('light-mode') ? '#ffffff' : '#1e3c72';
-	// toggleSwitch.classList.toggle('dark-mode');
+	toggleSwitch.classList.toggle('dark-mode');
 	body = document.body;
 	isDarkMode = body.classList.contains('bg-black');
   pageLoadBlack = false;
@@ -250,7 +250,7 @@ function isDarkModeCheck(){
   $('.footer-section').attr('style', 'background-color: white;');
 
   // $('.blur-bg-menu ').css('background-color', 'transparent');
-   toggleSwitch.classList.toggle('light-mode');
+  // toggleSwitch.classList.toggle('light-mode');
 
   removeGalaxyBackground();
     	
@@ -286,8 +286,7 @@ function isDarkModeCheck(){
   $('.contactBtn').attr('style', 'background-color: gold;');
   $('.formColor').attr('style', 'background-color: white;');
   $('.footer-section').attr('style', 'background-color: black;');
-  toggleSwitch.classList.toggle('dark-mode');
-
+ // toggleSwitch.classList.toggle('dark-mode');
   // $('.blur-bg-menu ').css('background-color', 'transparent');
     addGalaxyBackground();
 }
