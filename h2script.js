@@ -133,6 +133,22 @@ document.querySelectorAll(".timeline-item").forEach(item => {
       }
     });
 
+ document.getElementById('downloadResume1').addEventListener('click', function () {
+      const pdfUrl = 'Shrujal-Bhandari-SDE.pdf'; // Replace with the actual path to your PDF file
+      // Open the PDF in a new tab
+      const newTab = window.open(pdfUrl, '_blank');
+      // Force download in the new tab
+      if (newTab) {
+        newTab.onload = function () {
+          const link = newTab.document.createElement('a');
+          link.href = pdfUrl;
+          link.download = 'ShrujalBhandari-Resume.pdf'; // Set the download file name
+          link.click();
+          newTab.close(); // Close the new tab after initiating the download
+        };
+      }
+    });
+
 //const isDarkMode = body.classList.contains('bg-black');
 
 //vibes switch funtion
@@ -146,16 +162,21 @@ const mediaQuery = window.matchMedia('(max-width: 750px)');
     if (isDarkModeOn == false) {
     console.log('The screen width is 750px or smaller');
     $('.blur-bg-menu ').css('background-color', 'black');
+    $('.fa-bars:before').css('background-color', 'white');
     } 
     else {
     $('.blur-bg-menu ').css('background-color', 'white');
+    $('.fa-bars:before').css('background-color', 'transparent');
     }
   }
+  else{
+    $('.blur-bg-menu ').css('background-color', 'transparent');
+  }
 	
-	toggleSwitch.classList.toggle('light-mode');
-	toggleSwitch.classList.toggle('dark-mode');
+	// toggleSwitch.classList.toggle('light-mode');
+	// toggleSwitch.classList.toggle('dark-mode');
 	//document.body.style.backgroundColor = toggleSwitch.classList.contains('light-mode') ? '#ffffff' : '#1e3c72';
-	toggleSwitch.classList.toggle('dark-mode');
+	// toggleSwitch.classList.toggle('dark-mode');
 	body = document.body;
 	isDarkMode = body.classList.contains('bg-black');
   pageLoadBlack = false;
@@ -173,12 +194,21 @@ function isDarkModeOnReload()
   if(mediaQuery.matches) 
   {
     if (isDarkModeOn == false) {
+      //lightmode
     console.log('The screen width is 750px or smaller');
-    $('.blur-bg-menu ').css('background-color', 'black');
+    $('.blur-bg-menu ').css('background-color', 'white');
+    $('.fa-bars:before').css('background-color', 'white');
     } 
     else {
-    $('.blur-bg-menu ').css('background-color', 'white');
+      //lightmode
+    $('.blur-bg-menu ').css('background-color', 'black');
+    $('.fa-bars:before').css('background-color', 'transparent');
     }
+  }
+  else{
+      //fullscreenMode
+    $('.blur-bg-menu ').css('background-color', 'transparent');
+
   }
   
   body = document.body;
@@ -217,6 +247,11 @@ function isDarkModeCheck(){
   $('.contactBtn').attr('style', 'background-color: white;');
   $('.timeline-content').attr('style', 'border-color: gainsboro;');
   $('.formColor').attr('style', 'background-color: white;');
+  $('.footer-section').attr('style', 'background-color: white;');
+
+  // $('.blur-bg-menu ').css('background-color', 'transparent');
+   toggleSwitch.classList.toggle('light-mode');
+
   removeGalaxyBackground();
     	
 	} 
@@ -250,15 +285,11 @@ function isDarkModeCheck(){
   $('.timeline-content').attr('style', 'border-color: snow;');
   $('.contactBtn').attr('style', 'background-color: gold;');
   $('.formColor').attr('style', 'background-color: white;');
+  $('.footer-section').attr('style', 'background-color: black;');
+  toggleSwitch.classList.toggle('dark-mode');
 
-
-
+  // $('.blur-bg-menu ').css('background-color', 'transparent');
     addGalaxyBackground();
-   	//navbarMiddleColor.style.backgroundColor  = 'black';
-    // if(e.matches)
-	//     {
-	//         $('.blur-bg-menu ').css('background-color', 'black');
-	//     }
 }
 }
 
