@@ -13,6 +13,49 @@ body.bg-white {
 }
 
 
+
+
+/*footer*/
+.footer-section {
+  text-align: center;
+  padding: 50px -1px;
+  position: relative;
+  background-color: black;
+}
+
+.footer-section .signature {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: gold;
+}
+
+.footer-section .made-in-india {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.footer-section .made-in-india span {
+  color: red;
+}
+
+.footer-section .social-icons a {
+  font-size: 2rem;
+  margin: 0 15px;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-section .social-icons a:hover {
+  color: #007bff;
+}
+
+.footer-section .background-illustration {
+  width: 100%;
+}
+
+/*footer ends*/
+
+
 .card-content {
     background-color: rgba(255, 255, 255, 0.1) !important; /* Ensure transparency */
     padding: 15px;
@@ -229,6 +272,11 @@ color: white;
 
 
 
+@media screen and (max-width: 750px){
+.fas.fa-bars{
+/*  background-color: black;*/
+  }
+}
 
 
 
@@ -1013,7 +1061,7 @@ font-size: 18px;
 
 .navbar-dark,.navbar-toggler{
   color: black;
-  margin-right: 20px !important;
+/*  margin-right: 20px !important;*/
 }
 
 /*common navbar code*/
@@ -1029,6 +1077,8 @@ font-size: 18px;
   font-size: 22px;
 
 }
+
+
 /*
 
 .navbar a:hover {
@@ -1150,4 +1200,6 @@ transform: translateX(30px);
     height: 33px !important;
     width: 13px !important;
 }
+
+
 
