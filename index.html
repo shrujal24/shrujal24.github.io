@@ -82,7 +82,7 @@
 
         <!-- Action Buttons -->
         <div class="action-buttons">
-          <a class="btn btn-primary" id="downloadResume">Download CV</a>
+          <a class="btn btn-primary" id="downloadResumeCV">Download CV</a>
         </div>
       </div>
     </div>
@@ -116,7 +116,7 @@
 		
 			<div class="resume-section">
 			 	<div class="col button-line">
-					 <button type="button" id="downloadResume1" class="btn btn-warning" style="font-weight: bold;">Resume</button>
+					 <button type="button" id="downloadResumeBTN" class="btn btn-warning" style="font-weight: bold;">Resume</button>
 					  <div class="vertical-line" id="vertical-line"></div>
 					   <div class="icons">
 					    <a href="https://www.linkedin.com/in/shrujal-bhandari-b82047103/" target="_blank">
@@ -406,6 +406,27 @@
 
 <script type="text/javascript">
 
+	// document.getElementById('downloadResumeBTN').addEventListener('click', function() {
+ //        window.open('pdf/Software-Engineer-Shrujal.pdf', '_blank');});
+ document.getElementById('downloadResumeCV').addEventListener('click', function() {
+        window.open('Shrujal-Bhandari-SDE.pdf', '_blank');});
+
+	document.getElementById('downloadResumeBTN').addEventListener('click', function () {
+      const pdfUrl = 'https://github.com/shrujal24/shrujal24.github.io/blob/main/Shrujal-Bhandari-SDE.pdf'; // Replace with the actual path to your PDF file
+      // Open the PDF in a new tab
+      const newTab = window.open(pdfUrl, '_blank');
+      // Force download in the new tab
+      if (newTab) {
+        newTab.onload = function () {
+          const link = newTab.document.createElement('a');
+          link.href = pdfUrl;
+          link.download = 'ShrujalBhandari-Resume.pdf'; // Set the download file name
+          link.click();
+          newTab.close(); // Close the new tab after initiating the download
+        };
+      }
+    });
+	
     // const synoEngineer = document.getElementById('preloader');
 	// synoEngineer.style.
 
