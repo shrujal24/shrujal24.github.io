@@ -409,24 +409,9 @@
 	// document.getElementById('downloadResumeBTN').addEventListener('click', function() {
  //        window.open('pdf/Software-Engineer-Shrujal.pdf', '_blank');});
  document.getElementById('downloadResumeCV').addEventListener('click', function() {
-        window.open('Shrujal-Bhandari-SDE.pdf', '_blank');});
-
-	document.getElementById('downloadResumeBTN').addEventListener('click', function () {
-      const pdfUrl = 'https://github.com/shrujal24/shrujal24.github.io/blob/main/Shrujal-Bhandari-SDE.pdf'; // Replace with the actual path to your PDF file
-      // Open the PDF in a new tab
-      const newTab = window.open(pdfUrl, '_blank');
-      // Force download in the new tab
-      if (newTab) {
-        newTab.onload = function () {
-          const link = newTab.document.createElement('a');
-          link.href = pdfUrl;
-          link.download = 'ShrujalBhandari-Resume.pdf'; // Set the download file name
-          link.click();
-          newTab.close(); // Close the new tab after initiating the download
-        };
-      }
-    });
-	
+        window.open('SDE-Shrujal-Bhandari.pdf', '_blank');});
+	 document.getElementById('downloadResumeBTN').addEventListener('click', function() {
+        window.open('SDE-Shrujal-Bhandari.pdf', '_blank');});
     // const synoEngineer = document.getElementById('preloader');
 	// synoEngineer.style.
 
