@@ -116,38 +116,21 @@ document.querySelectorAll(".timeline-item").forEach(item => {
 // scroll Event ends
 
 
-// dowload resume
- document.getElementById('downloadResume').addEventListener('click', function () {
-      const pdfUrl = 'Shrujal-Bhandari-SDE.pdf'; // Replace with the actual path to your PDF file
-      // Open the PDF in a new tab
-      const newTab = window.open(pdfUrl, '_blank');
-      // Force download in the new tab
-      if (newTab) {
-        newTab.onload = function () {
-          const link = newTab.document.createElement('a');
-          link.href = pdfUrl;
-          link.download = 'ShrujalBhandari-Resume.pdf'; // Set the download file name
-          link.click();
-          newTab.close(); // Close the new tab after initiating the download
-        };
-      }
-    });
-
- document.getElementById('downloadResume1').addEventListener('click', function () {
-      const pdfUrl = 'Shrujal-Bhandari-SDE.pdf'; // Replace with the actual path to your PDF file
-      // Open the PDF in a new tab
-      const newTab = window.open(pdfUrl, '_blank');
-      // Force download in the new tab
-      if (newTab) {
-        newTab.onload = function () {
-          const link = newTab.document.createElement('a');
-          link.href = pdfUrl;
-          link.download = 'ShrujalBhandari-Resume.pdf'; // Set the download file name
-          link.click();
-          newTab.close(); // Close the new tab after initiating the download
-        };
-      }
-    });
+ // document.getElementById('downloadResume1').addEventListener('click', function () {
+ //      const pdfUrl = 'Shrujal-Bhandari-SDE.pdf'; // Replace with the actual path to your PDF file
+ //      // Open the PDF in a new tab
+ //      const newTab = window.open(pdfUrl, '_blank');
+ //      // Force download in the new tab
+ //      if (newTab) {
+ //        newTab.onload = function () {
+ //          const link = newTab.document.createElement('a');
+ //          link.href = pdfUrl;
+ //          link.download = 'ShrujalBhandari-Resume.pdf'; // Set the download file name
+ //          link.click();
+ //          newTab.close(); // Close the new tab after initiating the download
+ //        };
+ //      }
+ //    });
 
 //const isDarkMode = body.classList.contains('bg-black');
 
