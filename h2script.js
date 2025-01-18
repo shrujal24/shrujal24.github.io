@@ -15,9 +15,6 @@ loadingEvent();
 modeSwitchToogle();
 isDarkModeOnReload();
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const scrollWrapper = document.querySelector(".scroll-wrapper");
 
