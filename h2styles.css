@@ -12,6 +12,9 @@ body.bg-white {
   --navbar-toggler-color: black; /* Default for light mode */
 }
 
+.formColor{
+  color: black;
+}
 
 
 
