@@ -1135,6 +1135,7 @@ font-size: 18px;
   display: flex;
    align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
+  margin-right: -29px;
 }
 
 .vertical-line {
