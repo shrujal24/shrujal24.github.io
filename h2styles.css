@@ -7,6 +7,9 @@
   --navbar-color: black;
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 body.bg-white {
   --navbar-toggler-color: black; /* Default for light mode */
